@@ -54,7 +54,7 @@ endef
 define Package/opkg/conffiles
 /etc/opkg.conf
 /etc/opkg/keys/
-/etc/opkg/customfeeds.conf
+# /etc/opkg/customfeeds.conf
 endef
 
 TARGET_CFLAGS += -ffunction-sections -fdata-sections
