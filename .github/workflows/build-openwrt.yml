@@ -83,9 +83,17 @@ jobs:
         echo "CONFIG_PACKAGE_curl=y\n" >> .config
         echo "CONFIG_PACKAGE_jq=y\n" >> .config
         echo "CONFIG_PACKAGE_vpn-policy-routing=y\n" >> .config
-        echo "CONFIG_PACKAGE_luci-app-vpn-policy-routing=y\n" >> .config
+        echo "CONFIG_PACKAGE_luci-app-vpn-policy-routing=y\n" >> .config        
         echo "CONFIG_PACKAGE_luci-proto-wireguard=y\n" >> .config
         echo "CONFIG_PACKAGE_luci-app-wireguard=y\n" >> .config
+        echo "CONFIG_PACKAGE_ipset=y\n" >> .config
+        echo "CONFIG_PACKAGE_iptables-mod-extra=y \n" >> .config
+        echo "CONFIG_PACKAGE_iptables-mod-nfqueue=y\n" >> .config
+        echo "CONFIG_PACKAGE_iptables-mod-filter=y\n" >> .config
+        echo "CONFIG_PACKAGE_iptables-mod-ipopt=y\n" >> .config
+        echo "CONFIG_PACKAGE_iptables-mod-conntrack-extra=y\n" >> .config
+        echo "CONFIG_PACKAGE_ip6tables-mod-nat=y\n" >> .config
+        echo "CONFIG_PACKAGE_ip6tables-extra=y\n" >> .config
         make defconfig
         cat .config
 
